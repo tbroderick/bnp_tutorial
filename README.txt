@@ -48,8 +48,20 @@ Draw a Dirichlet distribution with large K.
 Press enter to keep making draws from the random distribution.
 Press "x" and then enter when you're done.
 
+Note: in the tutorial we tried out different values
+of a. (For K=1000, we tried a=0.001,0.01,1,10.)
+Although we didn't cover it in the tutorial,
+you can use the function "ex3_gen_largeK_diri"
+to also try out different values of K.
+E.g. > ex3_gen_largeK_diri(K=1000,a=0.01)
+
 Load Example 4
 Look at the cluster assignments according to a Dirichlet distribution with large K.
 > source("ex4_largeK_count.R")
 Press enter to keep making draws from the random distribution.
 Press "x" and then enter when you're done.
+
+Note: though we didn't cover it in the tutorial,
+you can use the function "ex4_gen_largeK_count"
+to draw cluster assignments with different values of K and a.
+E.g. > ex4_gen_largeK_count(K=1000,a=0.01)

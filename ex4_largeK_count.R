@@ -23,7 +23,7 @@ library(MCMCpack)
 # maximum number of data points to draw
 maxN = 1000
 
-# use these parameter by default
+# use these parameters by default
 K_default = 1000
 a_default = 10/K_default
 # note: default run with these parameters
