@@ -43,41 +43,13 @@ to draw random distributions using different Dirichlet parameters.
 e.g. > ex2_draw_diris_diffa(c(1,3,5,2))
 
 Load Example 3
+Draw a Dirichlet distribution with large K.
 > source("ex3_largeK_distr.R")
 Press enter to keep making draws from the random distribution.
 Press "x" and then enter when you're done.
 
 Load Example 4
+Look at the cluster assignments according to a Dirichlet distribution with large K.
 > source("ex4_largeK_count.R")
 Press enter to keep making draws from the random distribution.
 Press "x" and then enter when you're done.
-
-Load Example 5
-> source("ex5_dpmm.R")
-Press enter to keep making draws from the DPMM.
-Press "x" and then enter when you're done.
-
-==============================================
-====   Tutorial Part III
-==============================================
-
-Load Example 6
-Draw a random, simulated data set.
-Run a Gibbs sampler for a CRP Gaussian mixture model
-with all data points initialized to the same cluster.
-> source("ex6_sampler.R")
-Press enter to keep making Gibbs samples.
-Enter a number to go that many full iterations forward in the sampler.
-Press "x" and then enter when you're done.
-
-Run a Gibbs sampler for a CRP Gaussian mixture model
-with all data points initialized to their own cluster.
-> ex6_crp_gibbs(data=data$x, sd=1, initz=1:nrow(data$x))
-
-Note: though we didn't cover it in the tutorial,
-you can generate a new data set, possibly
-with a different data set size or with
-different cluster widths, with the function
-"ex6_gen_data".
-e.g. > ex6_gen_data(1000,0.3)
-
