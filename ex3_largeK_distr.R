@@ -15,6 +15,9 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# useful for sampling from the Dirichlet distribution
+library(MCMCpack)
+
 # maximum number of data points to draw
 maxN = 1000
 
