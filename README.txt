@@ -65,3 +65,21 @@ Note: though we didn't cover it in the tutorial,
 you can use the function "ex4_gen_largeK_count"
 to draw cluster assignments with different values of K and a.
 E.g. > ex4_gen_largeK_count(K=1000,a=0.01)
+
+==============================================
+====   Tutorial Part II
+==============================================
+
+Load the functions for Example 5:
+> source("ex5_gem.R")
+
+Draw a random distribution with GEM parameter alpha.
+We tried alpha=1,10,100.
+E.g. > ex5_draw_gem(alpha=10)
+
+Load Example 6
+> source("ex6_dpmm.R")
+Press enter to keep making draws from the DPMM.
+Enter a number to make a larger number of draws at once.
+Press "x" and then enter when you're done.
+
