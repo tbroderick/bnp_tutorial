@@ -54,7 +54,7 @@ ex6_gen_data <- function(Ndata, sd) {
 	list("x" = x, "z" = z, "mu" = mu)
 }
 
-ex6_crp_gibbs <- function(data, sd, initz) {
+ex7_crp_gibbs <- function(data, sd, initz) {
 # Run a Gibbs sampler for a CRP Gaussian mixture model
 # on the data
 #
