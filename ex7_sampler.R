@@ -21,7 +21,7 @@ library(mvtnorm)
 
 # Note: default function call at the end
 
-ex6_gen_data <- function(Ndata, sd) {
+ex7_gen_data <- function(Ndata, sd) {
 # generate Gaussian mixture model data for inference later
 #
 # Args:
@@ -224,10 +224,10 @@ ex7_crp_gibbs <- function(data, sd, initz) {
 }
 
 # generate a data set with 100 data points
-data <- ex6_gen_data(Ndata=100,sd=1)
+data <- ex7_gen_data(Ndata=100,sd=1)
 # run a CRP Gibbs sampler
 # initialized with all data points in the same cluster
-ex6_crp_gibbs(data=data$x, sd=1, initz=rep(1,100))
+ex7_crp_gibbs(data=data$x, sd=1, initz=rep(1,100))
 
 
 
