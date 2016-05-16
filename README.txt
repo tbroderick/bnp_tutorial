@@ -14,7 +14,7 @@ Keep pressing enter to get more iid beta random variables.
 Press "x" and then enter when you're done.
 > ex1_draw_betas(1)
 Choose a very small parameter tuple
-> ex1_draw_betas(0.001)
+> ex1_draw_betas(0.01)
 Choose a very large parameter tuple
 > ex1_draw_betas(1000)
 
@@ -33,7 +33,7 @@ Keep pressing enter to get more iid Dirichlet random variables.
 Press "x" and then enter when you're done.
 > ex2_draw_diris(K=4,a_scalar=1)
 Choose a very small shared parameter
-> ex2_draw_diris(K=4,a_scalar=0.001)
+> ex2_draw_diris(K=4,a_scalar=0.01)
 Choose a very large shared parameter
 > ex2_draw_diris(K=4,a_scalar=1000)
 
@@ -105,5 +105,5 @@ you can generate a new data set, possibly
 with a different data set size or with
 different cluster widths, with the function
 "ex7_gen_data".
-e.g. > data = ex7_gen_data(1000,0.3)
+e.g. > data = ex7_gen_data(Ndata=1000,sd=0.3)
 
