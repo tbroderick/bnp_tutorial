@@ -77,37 +77,8 @@ Draw a random distribution with GEM parameter alpha.
 We tried alpha=1,10,100.
 E.g. > ex5_draw_gem(alpha=10)
 
-==============================================
-====   Tutorial Part II
-==============================================
-
 Load Example 6:
 > source("ex6_dpmm.R")
 Press enter to keep making draws from the DPMM.
 Enter a number to make a larger number of draws at once.
 Press "x" and then enter when you're done.
-
-==============================================
-====   Tutorial Part III
-==============================================
-
-Load Example 7
-Draw a random, simulated data set.
-Run a Gibbs sampler for a CRP Gaussian mixture model
-with all data points initialized to the same cluster.
-> source("ex7_sampler.R")
-Press enter to keep making Gibbs samples.
-Enter a number to go that many full iterations forward in the sampler.
-Press "x" and then enter when you're done.
-
-Run a Gibbs sampler for a CRP Gaussian mixture model
-with all data points initialized to their own cluster.
-> ex7_crp_gibbs(data=data$x, sd=1, initz=1:nrow(data$x))
-
-Note: though we didn't cover it in the tutorial,
-you can generate a new data set, possibly
-with a different data set size or with
-different cluster widths, with the function
-"ex7_gen_data".
-e.g. > data = ex7_gen_data(Ndata=1000,sd=0.3)
-
