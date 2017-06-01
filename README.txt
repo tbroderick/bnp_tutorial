@@ -21,7 +21,7 @@ Choose a very large parameter tuple
 Note: though we didn't cover it in the tutorial,
 you can use the function "ex1_draw_betas_diffa"
 to draw random distributions using both beta parameters.
-e.g. > ex1_draw_betas_diffa(0.1,10)
+e.g. > ex1_draw_betas_diffa(1,10)
 
 Load the functions for Example 2.
 Note: you may need to install the MCMCpack package first: > install.packages("MCMCpack")
