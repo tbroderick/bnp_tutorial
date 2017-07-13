@@ -1,6 +1,6 @@
 # A Gibbs sampler for a CRP Gaussian mixture model
 # Algorithm 3 in Neal 2000
-# Copyright (C) 2015, Tamara Broderick
+# Copyright (C) 2017, Tamara Broderick
 # www.tamarabroderick.com
 
 #    This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@ library(mvtnorm)
 
 # Note: default function call at the end
 
-ex7_gen_data <- function(Ndata, sd) {
+ex9_gen_data <- function(Ndata, sd) {
 # generate Gaussian mixture model data for inference later
 #
 # Args:
@@ -31,9 +31,9 @@ ex7_gen_data <- function(Ndata, sd) {
 #      i.e. this is the standard deviation in either direction
 #
 # Returns:
-#  x: an Ndata x 2 matrix of data points
+#  x: an Ndata x D matrix of data points (D=2 data dimensions)
 #  z: an Ndata-long vector of cluster assignments
-#  mu: a K x 2 matrix of cluster means,
+#  mu: a K x D matrix of cluster means,
 #      where K is the number of clusters
 
 	# matrix of cluster centers: one in each quadrant
@@ -54,7 +54,7 @@ ex7_gen_data <- function(Ndata, sd) {
 	list("x" = x, "z" = z, "mu" = mu)
 }
 
-ex7_crp_gibbs <- function(data, sd, initz) {
+ex9_crp_gibbs <- function(data, sd, initz) {
 # Run a Gibbs sampler for a CRP Gaussian mixture model
 # on the data
 #
@@ -71,7 +71,7 @@ ex7_crp_gibbs <- function(data, sd, initz) {
 #  Nothing
 #
 # Note:
-#  Has only been tested on D=2
+#  Has been tested only on D=2
 
 	# supposedly a collection of colors that
 	# are easily visually separated on the screen
@@ -224,10 +224,10 @@ ex7_crp_gibbs <- function(data, sd, initz) {
 }
 
 # generate a data set with 100 data points
-data <- ex7_gen_data(Ndata=100,sd=1)
+data <- ex9_gen_data(Ndata=100,sd=1)
 # run a CRP Gibbs sampler
 # initialized with all data points in the same cluster
-ex7_crp_gibbs(data=data$x, sd=1, initz=rep(1,100))
+ex9_crp_gibbs(data=data$x, sd=1, initz=rep(1,100))
 
 
 
