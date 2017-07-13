@@ -22,7 +22,7 @@ maxiters = 1000
 # note: function call made with default
 # parameter settings at the end
 
-ex5_dpmm_sample <- function(
+ex6_dpmm_sample <- function(
 	alpha = 2,
 	mu0 = 0,
 	sig_0 = 1.5,
@@ -157,6 +157,6 @@ ex5_dpmm_sample <- function(
 }
 
 # default run with default parameters
-ex5_dpmm_sample()
+ex6_dpmm_sample()
 
 
