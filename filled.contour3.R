@@ -1,4 +1,5 @@
-# http://wiki.cbr.washington.edu/qerm/index.php/R/Contour_Plots
+# This code obtained from: http://wiki.cbr.washington.edu/qerm/index.php/R/Contour_Plots
+# More details on credit just below the function inputs.
 filled.contour3 <-
   function (x = seq(0, 1, length.out = nrow(z)),
             y = seq(0, 1, length.out = ncol(z)), z, xlim = range(x, finite = TRUE), 
