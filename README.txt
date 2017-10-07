@@ -18,8 +18,7 @@ Choose a very small parameter tuple
 Choose a very large parameter tuple
 > ex1_draw_betas(1000)
 
-Note: though we didn't cover it in the tutorial,
-you can use the function "ex1_draw_betas_diffa"
+You can use the function "ex1_draw_betas_diffa"
 to draw random distributions using both beta parameters.
 e.g. > ex1_draw_betas_diffa(1,10)
 
